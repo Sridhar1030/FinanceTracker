@@ -1,5 +1,6 @@
-import admin from "firebase-admin";
+import admin, { database } from "firebase-admin";
 import { readFileSync } from "fs";
+import { connect } from "http2";
 import path from "path";
 
 const serviceAccountPath = path.resolve("src/config/firebaseConfig.json");
@@ -12,6 +13,7 @@ export function initializeFirebaseApp() {
         admin.initializeApp({
             credential: admin.credential.cert(serviceAccount),
             databaseURL: "https://finandetails-default-rtdb.firebaseio.com", // Replace with your database URL
+            
         });
         initialized = true;
     }
