@@ -10,7 +10,6 @@ import {
 export const getUserMessages = async (req, res) => {
     try {
         const userId = req.params.id;
-        console.log(userId);
         const decryptedMessages = await getUserMessagesById(userId);
 
         if (decryptedMessages.length > 0) {
