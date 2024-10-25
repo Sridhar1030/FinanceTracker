@@ -307,14 +307,14 @@ const FinanceDashboard = () => {
     return (
         <div className="bg-gray-900 text-white min-h-screen p-4 lg:p-6">
             {/* Header Section */}
-            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-6">
+            <div className="flex flex-col lg:flex-row lg:justify-between items-center justify-center lg:items-center gap-4 mb-6">
                 {/* Logo */}
                 <div className="flex items-center">
                     <h1 className="text-2xl lg:text-3xl font-bold">PennyWise</h1>
                 </div>
     
                 {/* Date and Limit Controls */}
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                <div className="flex flex-row sm:flex-row items-start sm:items-center gap-3">
                     <select
                         value={selectedDate}
                         onChange={handleDateChange}
@@ -324,14 +324,14 @@ const FinanceDashboard = () => {
                     </select>
                     <button
                         onClick={() => setShowLimitModal(true)}
-                        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-200 w-full sm:w-auto text-sm"
+                        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-200 w-full sm:w-auto text-sm whitespace-nowrap"
                     >
                         Set Monthly Limit
                     </button>
                 </div>
     
                 {/* Utils */}
-                <div className="flex items-center gap-4">
+                <div className="flex  gap-4">
                     <div className="flex items-center gap-2">
                         <Clock10 className="w-5 h-5" />
                         <span className="text-sm text-gray-300">
@@ -372,23 +372,23 @@ const FinanceDashboard = () => {
             {/* Main Content Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 {/* Summary Cards Row */}
-                <div className="bg-orange-500 rounded-xl p-6 lg:col-span-1">
-                    <div className="grid grid-cols-2 gap-2 lg:gap-5">
+                <div className="bg-orange-500 rounded-xl p-6 lg:col-span-1 flex justify-evenly">
+                    <div className="grid grid-cols-2   gap-2 gap-x-10  lg:gap-5">
                         <div>
-                            <h1 className="xl:text-lg md:text-base text-xs md:whitespace-nowrap font-semibold ">Total Spendings</h1>
-                            <p className="xl:text-3xl md:text-2xl text-sm font-bold">₹{totalAmounts.totalDebit.toLocaleString()}</p>
+                            <h1 className="xl:text-lg md:text-lg text-lg  font-semibold ">Total Spendings</h1>
+                            <p className="xl:text-3xl md:text-3xl lg:text-xl text-xl font-bold">₹{totalAmounts.totalDebit.toLocaleString()}</p>
                         </div>
                         <div>
-                            <h1 className="xl:text-lg md:text-base text-xs md:whitespace-nowrap font-semibold ">Total Earnings</h1>
-                            <p className="xl:text-3xl md:text-2xl text-sm font-bold">₹{totalAmounts.totalCredit.toLocaleString()}</p>
+                            <h1 className="xl:text-lg md:text-lg text-lg  font-semibold ">Total Earnings</h1>
+                            <p className="xl:text-3xl md:text-3xl  lg:text-xl text-xl font-bold">₹{totalAmounts.totalCredit.toLocaleString()}</p>
                         </div>
                         <div>
-                            <h2 className="xl:text-lg md:text-base text-xs md:whitespace-nowrap font-semibold  ">Monthly Earning</h2>
-                            <p className="xl:text-3xl md:text-2xl text-sm font-bold">₹{CreditedTotal}</p>
+                            <h2 className="xl:text-lg md:text-lg text-lg  font-semibold  ">Monthly Earning</h2>
+                            <p className="xl:text-3xl md:text-3xl  lg:text-xl text-xl font-bold">₹{CreditedTotal}</p>
                         </div>
                         <div>
-                            <h2 className="xl:text-lg md:text-base text-xs md:whitespace-nowrap font-semibold ">Monthly Expense</h2>
-                            <p className="xl:text-3xl md:text-2xl text-sm font-bold">₹{DebitedTotal}</p>
+                            <h2 className="xl:text-lg md:text-lg text-lg  font-semibold ">Monthly Expense</h2>
+                            <p className="xl:text-3xl md:text-3xl lg:text-xl text-xl font-bold">₹{DebitedTotal}</p>
                         </div>
                     </div>
                 </div>
