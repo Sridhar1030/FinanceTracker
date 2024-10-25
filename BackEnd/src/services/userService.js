@@ -238,7 +238,6 @@ export async function getUserYearlyMessagesById(userId, year) {
         const userData = messagesSnapshot.val();
 
         if (!userData) {
-            console.log("No user data found for ID:", userId);
             return [];
         }
 

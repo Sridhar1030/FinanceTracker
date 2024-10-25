@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 
 // Serve frontend from "dist" directory
-const buildPath = path.join(__dirname, "../../frontend/dist");
+const buildPath = path.join(__dirname, "../../FrontEnd/dist");
 if (!fs.existsSync(buildPath)) {
     console.error("Build directory not found:", buildPath);
 }
