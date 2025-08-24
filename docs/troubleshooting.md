@@ -16,7 +16,7 @@ Solutions to common issues you might encounter while using PennyTracker.
 1. **Check your credentials**
    ```bash
    # Verify you're using the correct email and password
-   # Try the demo credentials: test1@gmail.com / 123456
+   # Try the demo credentials: sridhar@gmail.com / sridhar1090
    ```
 
 2. **Clear browser cache and cookies**

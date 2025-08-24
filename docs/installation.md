@@ -212,8 +212,8 @@ Open your browser and navigate to `http://localhost:5173`
 ### 3. Test Integration
 
 1. Try logging in with demo credentials:
-   - Email: `test1@gmail.com`
-   - Password: `123456`
+   - Email: `sridhar@gmail.com`
+   - Password: `sridhar1090`
 
 2. Verify that data loads correctly in the dashboard
 

@@ -40,11 +40,17 @@ Experience PennyTracker in action! Try out our live demo:
 
 | 🌐 **Live Website** | 📧 **Demo Email** | 🔐 **Password** |
 |:---:|:---:|:---:|
-| **[PennyTracker.tech](https://www.pennytracker.tech)** | `test1@gmail.com` | `123456` |
+| **[PennyTracker.tech](https://www.pennytracker.tech)** | `sridhar@gmail.com` | `sridhar1090` |
 
 </div>
 
 > 💡 **Tip**: Use the demo credentials above to explore all features without setting up your own account.
+
+### 🖥️ Dashboard Preview
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a6154b57-90fa-4955-a6b2-3ab1f62dd005" alt="PennyTracker Dashboard" width="100%"/>
+</div>
 
 ---
 
